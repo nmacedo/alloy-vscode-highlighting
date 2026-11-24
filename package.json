@@ -1,0 +1,48 @@
+{
+  "name": "alloy-language",
+  "displayName": "Alloy Language Support",
+  "description": "Syntax highlighting for the Alloy 6 modeling language.",
+  "version": "0.1.0",
+  "publisher": "YOUR_PUBLISHER_ID",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nmacedo/alloy-syntax-highlighting.git"
+  },
+  "homepage": "https://github.com/nmacedo/alloy-syntax-highlighting/tree/main/vscode",
+  "bugs": {
+    "url": "https://github.com/nmacedo/alloy-syntax-highlighting/issues"
+  },
+  "keywords": [
+    "alloy",
+    "alloy6",
+    "syntax-highlighting"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "alloy",
+        "aliases": [
+          "Alloy",
+          "alloy"
+        ],
+        "extensions": [
+          ".als"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "alloy",
+        "scopeName": "source.alloy",
+        "path": "./syntaxes/alloy.tmLanguage.json"
+      }
+    ]
+  }
+}
